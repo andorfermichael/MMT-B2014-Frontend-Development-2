@@ -1,0 +1,18 @@
+# system
+.DS_Store
+
+# IDE
+.idea/
+
+# logs
+npm-debug.log
+
+# dependencies
+node_modules/
+bower_components/
+
+# temporary files
+tmp/
+
+# build
+dist/
