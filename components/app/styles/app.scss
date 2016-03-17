@@ -4,6 +4,8 @@
 
 .teammember {
   list-style-type: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   border-bottom: 2px solid gray;
 
   &:first-child {
