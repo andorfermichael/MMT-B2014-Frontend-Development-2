@@ -1,19 +1,8 @@
 <div class="container-fluid ">
     <div class="row">
         <div class="col-md-6">
-            {{#each model as |teammember|}}
-                <div class="row  col-md-offset-1">
-                    <h4>Name</h4>
-                    <p>{{teammember.name}}</p>
-                </div>
-                <div class="row  col-md-offset-1">
-                    <h4>GitHub Username</h4>
-                    <p>{{teammember.github}}</p>
-                </div>
-                <div class="row  col-md-offset-1">
-                    <h4>Email</h4>
-                    <p>{{teammember.email}}</p>
-                </div>
+            {{#each model as |teamUnit|}}
+                {{team-listing teammember=teamUnit}}
             {{/each}}
         </div>
     </div>
