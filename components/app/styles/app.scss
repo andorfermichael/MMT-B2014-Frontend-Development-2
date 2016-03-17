@@ -1,2 +1,12 @@
 @import "bootstrap";
 @import "bootstrap/theme";
+
+
+.teammember {
+  list-style-type: none;
+  border-bottom: 2px solid gray;
+
+  &:first-child {
+    border-top: 2px solid gray;
+  }
+}
