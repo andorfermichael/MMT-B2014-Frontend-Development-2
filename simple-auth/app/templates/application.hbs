@@ -9,6 +9,14 @@
             <li><a href="/">Page 3</a></li>
             <li><a href="/">Page 4</a></li>
             <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
+            <li></li>
+            <li>
+                {{#if session.isAuthenticated}}
+                    <button {{action 'logout'}}>Logout</button>
+                {{else}}
+                    {{#link-to 'login'}}Login{{/link-to}}
+                {{/if}}
+            </li>
         </ul>
     </div>
 </div>
