@@ -1,3 +1,5 @@
+import Mirage from 'ember-cli-mirage';
+
 export default function() {
   this.get('/teammembers', function() {
     return {
@@ -22,4 +24,7 @@ export default function() {
       }]
     };
   });
+
+  // Pass through login to mock server
+  this.passthrough('/token');
 }
