@@ -9,7 +9,7 @@
             <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
             <li>
                 {{#if session.isAuthenticated}}
-                    <button {{action 'logout'}}>Logout</button>
+                    <a {{action 'logout'}}>Logout</a>
                 {{else}}
                     {{#link-to 'login'}}Login{{/link-to}}
                 {{/if}}
