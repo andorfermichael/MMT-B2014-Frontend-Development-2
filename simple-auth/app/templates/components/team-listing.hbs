@@ -1,0 +1,24 @@
+<div class="row col-md-offset-1">
+    <h4>Name</h4>
+    <p>{{teammember.name}}</p>
+</div>
+<div class="row col-md-offset-1">
+    <h4>GitHub Username</h4>
+    <p>{{teammember.github}}</p>
+</div>
+<div class="row col-md-offset-1">
+    <h4>Email</h4>
+    <p>{{teammember.email}}</p>
+</div>
+{{#if isImageShowing}}
+    <div class="row col-md-offset-1">
+        <h4>Image</h4>
+        <img src={{teammember.image}} alt={{teammember.name}} width="200" height="200">
+        <button {{action "imageHide"}}>Hide image</button>
+    </div>
+{{else}}
+    <div class="row col-md-offset-1">
+        <h4>Image</h4>
+        <button {{action "imageShow"}}>Show image</button>
+    </div>
+{{/if}}
