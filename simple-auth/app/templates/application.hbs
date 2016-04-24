@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="page-header">
+        <h1 id="title">Welcome to Mikes' Ember Page</h1>
+    </div>
+    <div class="row">
+        <ul id="nav" class="nav nav-pills col-sm-5">
+            <li><a href="/">Home</a></li>
+            <li>{{#link-to 'account-management'}}Account Management{{/link-to}}</li>
+            <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+            <li>
+                {{#if session.isAuthenticated}}
+                    <a {{action 'logout'}}>Logout</a>
+                {{else}}
+                    {{#link-to 'login'}}Login{{/link-to}}
+                {{/if}}
+            </li>
+        </ul>
+    </div>
+</div>
+{{outlet}}
