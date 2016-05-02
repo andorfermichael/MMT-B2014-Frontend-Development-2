@@ -1,0 +1,8 @@
+<form {{action 'authenticate' on='submit'}}>
+  <button class="btn btn-default" type="submit">
+    <i class="fa fa-facebook"></i> Facebook
+  </button>
+  {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+  {{/if}}
+</form>
