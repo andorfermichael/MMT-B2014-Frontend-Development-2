@@ -16,3 +16,7 @@ tmp/
 
 # build
 dist/
+
+# config
+environment.js
+firebase.json
