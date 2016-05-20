@@ -1,4 +1,4 @@
-# Task-manager
+# Task-Manager-Prototype
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -19,6 +19,11 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+
+## Configuration
+* rename `firebase-sample.js` to `firebase.js` and replace APP-Name with the real APP-Name
+* go to `config/` and rename `enviroment-sample.js` to `enviroment.js`
+* open `enviroment.js` and replace app-name with the real app-name
 
 ## Running / Development
 
