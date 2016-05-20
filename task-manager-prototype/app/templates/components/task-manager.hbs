@@ -1,0 +1,20 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th{{action "sortBy" "internalNumber"}}>#</th>
+            <th {{action "sortBy" "title"}}>Title</th>
+            <th {{action "sortBy" "description"}}>Description</th>
+            <th {{action "sortBy" "creator"}}>Created at</th>
+            <th {{action "sortBy" "modifiedAt"}}>Modified at</th>
+            <th {{action "sortBy" "status"}}>Status</th>
+            <th {{action "sortBy" "priority"}}>Priority</th>
+            <th {{action "sortBy" "creator"}}>Creator</th>
+            <th {{action "sortBy" "editor"}}>Editor</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each taskItems as |taskItem| }}
+            {{ task-item task=taskItem }}
+        {{/each}}
+    </tbody>
+</table>

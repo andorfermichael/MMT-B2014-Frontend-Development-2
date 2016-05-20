@@ -1,0 +1,10 @@
+<h2>List</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            {{input value=filter class="form-control input-lg" placeholder="Filter by task title"}}
+        </div>
+    </div>
+</div>
+{{task-manager sortBy="sortBy" taskItems=sortedFilteredPaginatedList}}
+{{pagination-pager count=countPages current=currentPage change='pageChanged'}}
