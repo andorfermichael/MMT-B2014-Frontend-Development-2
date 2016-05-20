@@ -1,0 +1,7 @@
+{{#each model as |project|}}
+    <h4>{{project.name}}</h4>
+    <h5>Current Campaign</h5>
+    {{project.current.name}}
+{{/each}}
+
+{{outlet}}
